@@ -18,12 +18,12 @@ function app(state = initialState, action) {
 
 //#2
 
-function app1(state = initialState, action) {
-    return {
-        comments,
-        users,
-    };
-}
+const app = combineReducers({
+    comments,
+    users,
+});
+
+export default app;
 
 /*function commentsReducer(state = initialState, action) => {
     switch(action.type) {
